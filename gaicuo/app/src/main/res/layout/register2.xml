@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1d84e4"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="用户注册"
+            android:textColor="#fff"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="网络设置"
+            android:textColor="#fff"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="@mipmap/login"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/twoUseName"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="请输入用户名"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/twoPassword"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="请输入密码"
+                android:inputType="numberPassword"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/twoPasswordToo"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="请再次输入密码"
+                android:inputType="numberPassword"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/twoPhone"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="请输入手机号"
+                android:inputType="phone"
+                android:singleLine="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/twoNO"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="取消" />
+
+                <Button
+                    android:id="@+id/twoOK"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="注册" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
